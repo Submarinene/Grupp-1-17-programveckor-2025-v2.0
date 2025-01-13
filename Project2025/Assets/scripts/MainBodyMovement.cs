@@ -13,10 +13,13 @@ public class MainBodyMovement : MonoBehaviour
     public float gravityScale = 0f; // Factor affecting gradual motion, defaults to 0
     public float gravityChangeRate; // Rate at which gravityScale changes
 
+    AudioSource audioSource;
+
     private void Start()
     {
         playerRB = GetComponent<Rigidbody2D>();
         playerRB.gravityScale = 0f; // Ensure gravity doesn't interfere with motion
+        audioSource = GetComponent<AudioSource>();
     }
 
     void FixedUpdate()
@@ -85,6 +88,8 @@ public class MainBodyMovement : MonoBehaviour
         {
             playerRB.velocity = playerRB.velocity.normalized * maxSpeed;
         }
+
+        audioSource.volume = gravityScale;
     }
 
 }
