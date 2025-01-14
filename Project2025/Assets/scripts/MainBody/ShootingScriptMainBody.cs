@@ -12,13 +12,14 @@ public class ShootingScriptMainBody : MonoBehaviour
     CannonShotScript cannonShotR;
 
     public GameObject tutorialTextObject;
-
     TutorialText tutorialTextScript;
 
-    bool isShootActive;
+    public bool isShootActive;
     public float shootSpeed;
-    private float timeSinceShot = 0;
+    public float timeSinceShot = 0;
     bool isRight = false;
+
+    public int shotsFired;
 
     private void Start()
     {
@@ -41,6 +42,8 @@ public class ShootingScriptMainBody : MonoBehaviour
             if(tutorialTextScript.step > 5 && Input.GetMouseButton(0) && isShootActive && timeSinceShot >= shootSpeed)
             {
                 timeSinceShot -= shootSpeed;
+
+                shotsFired++;
 
                 if(isRight)
                 {

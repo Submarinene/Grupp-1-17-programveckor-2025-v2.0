@@ -16,7 +16,9 @@ public class TutorialText : MonoBehaviour
         "The Player moves towards and around the Focus-Point",
         "Right-Click to place the focuspoint",
         "Right-Click again to bring back the focuspoint",
-        "Left-Click to shoot"
+        "Left-Click to shoot",
+        "Break the wall to the right",
+        "Complete the level"
     };
 
     public GameObject focusPoint;
