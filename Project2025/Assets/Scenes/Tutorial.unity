@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 182714976}
   - component: {fileID: 182714975}
   - component: {fileID: 182714977}
+  - component: {fileID: 182714978}
   m_Layer: 0
   m_Name: MainBody
   m_TagString: Untagged
@@ -417,6 +418,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &182714978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182714970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f5ace420a16c594391a369f16c1bbea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cannonL: {fileID: 0}
+  cannonR: {fileID: 0}
+  tutorialTextObject: {fileID: 0}
 --- !u!1 &365139682
 GameObject:
   m_ObjectHideFlags: 0
@@ -1382,6 +1398,7 @@ GameObject:
   - component: {fileID: 742854535}
   - component: {fileID: 742854534}
   - component: {fileID: 742854536}
+  - component: {fileID: 742854537}
   m_Layer: 0
   m_Name: Cannon.L
   m_TagString: Untagged
@@ -1472,6 +1489,18 @@ MonoBehaviour:
   focusPoint: {fileID: 768888474}
   cannonPosition: {x: -0.65, y: 0.35, z: 0}
   positionSmoothness: 200
+--- !u!114 &742854537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742854532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74e2c3ad08575e4c8895322f798365c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &768888474
 GameObject:
   m_ObjectHideFlags: 0
@@ -12245,6 +12274,7 @@ GameObject:
   - component: {fileID: 1811400891}
   - component: {fileID: 1811400890}
   - component: {fileID: 1811400892}
+  - component: {fileID: 1811400893}
   m_Layer: 0
   m_Name: Cannon.R
   m_TagString: Untagged
@@ -12335,6 +12365,18 @@ MonoBehaviour:
   focusPoint: {fileID: 768888474}
   cannonPosition: {x: 0.65, y: 0.35, z: 0}
   positionSmoothness: 200
+--- !u!114 &1811400893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811400888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74e2c3ad08575e4c8895322f798365c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2034678148
 GameObject:
   m_ObjectHideFlags: 0
