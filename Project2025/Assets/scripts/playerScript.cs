@@ -33,7 +33,7 @@ public class playerScript : MonoBehaviour
         hearts[lives].GetComponent<Animator>().SetTrigger("hit"); //sätter igång explosion
         // hearts[lives].GetComponent<Image>().enabled = false; //tar bort ett hjärta
         transform.position = new Vector2(-7, 2); //makes the player respawn
-        if (lives == 2)
+        if (lives == 0)
         {
             StartCoroutine("GameOver");
             //change to game over scene
