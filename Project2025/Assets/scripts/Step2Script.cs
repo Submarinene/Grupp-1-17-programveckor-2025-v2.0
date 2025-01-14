@@ -4,7 +4,7 @@ using System.Collections;
 
 public class Step2Script : MonoBehaviour
 {
-    private float totalKeyPressTime = 0f; // Total time W, A, S, or D is pressed
+    public float totalKeyPressTime = 0f; // Total time W, A, S, or D is pressed
     private bool thresholdCrossed = false; // Flag to check if threshold is crossed
 
     // Threshold time in seconds

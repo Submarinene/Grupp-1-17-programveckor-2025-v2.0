@@ -858,7 +858,7 @@ GameObject:
   - component: {fileID: 410986758}
   - component: {fileID: 410986759}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Tutorial Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1008,7 +1008,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31b640fbca867614999b37d3025e3e41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementThreshold: 4000
+  totalDistanceMoved: 0
+  movementThreshold: 8000
 --- !u!114 &410986755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1022,7 +1023,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tutorialText: {fileID: 410986753}
-  timeThreshold: 6
+  stepStartTime: 0
+  timeThreshold: 8
   focusPoint: {fileID: 768888474}
 --- !u!114 &410986756
 MonoBehaviour:
@@ -1036,7 +1038,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbf182cd7d9cb384293c339ee501f429, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pressThreshold: 3
+  totalKeyPressTime: 0
+  pressThreshold: 5
 --- !u!114 &410986757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1620,6 +1623,7 @@ GameObject:
   - component: {fileID: 715563143}
   - component: {fileID: 715563145}
   - component: {fileID: 715563144}
+  - component: {fileID: 715563146}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -1636,7 +1640,7 @@ RectTransform:
   m_GameObject: {fileID: 715563142}
   m_LocalRotation: {x: 0.004363274, y: 0, z: 0, w: 0.9999905}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1249646370}
@@ -1684,6 +1688,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 715563142}
   m_CullTransparentMesh: 1
+--- !u!114 &715563146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 715563142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a0fa46af418fd546b52a23757adce7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialTextObject: {fileID: 410986749}
+  progressBar: {fileID: 1249646369}
 --- !u!1 &742854532
 GameObject:
   m_ObjectHideFlags: 0
@@ -12496,7 +12514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7058824, g: 0.7058824, b: 0.7058824, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
