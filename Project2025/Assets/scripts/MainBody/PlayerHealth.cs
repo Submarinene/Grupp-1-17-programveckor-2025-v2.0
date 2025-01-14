@@ -41,7 +41,7 @@ public class PlayerCollisions : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("You got hit");
         health--; //lives = lives -1;
@@ -51,6 +51,5 @@ public class PlayerCollisions : MonoBehaviour
         {
             SceneManager.LoadScene(1);
         }
-
     }
 }

@@ -19,7 +19,7 @@ public class ShootingScriptMainBody : MonoBehaviour
     public float timeSinceShot = 0;
     bool isRight = false;
 
-    public int shotsFired;
+    public float shotsFired;
 
     private void Start()
     {

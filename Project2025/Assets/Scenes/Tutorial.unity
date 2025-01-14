@@ -1180,7 +1180,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainBody: {fileID: 182714970}
   tutorialTextObject: {fileID: 410986749}
-  shotsThreshold: 30
+  shotsThreshold: 15
 --- !u!1 &463357058
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,7 +10,7 @@ public class Step6Script : MonoBehaviour
     public GameObject tutorialTextObject;
     TutorialText tutorialTextScript;
 
-    public int shotsThreshold;
+    public float shotsThreshold;
 
     bool isActivated = false;
 
