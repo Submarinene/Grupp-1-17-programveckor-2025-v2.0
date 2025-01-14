@@ -89,7 +89,7 @@ public class MainBodyMovement : MonoBehaviour
             playerRB.velocity = playerRB.velocity.normalized * maxSpeed;
         }
 
-        audioSource.volume = gravityScale;
+        audioSource.volume = gravityScale*2;
     }
 
 }
