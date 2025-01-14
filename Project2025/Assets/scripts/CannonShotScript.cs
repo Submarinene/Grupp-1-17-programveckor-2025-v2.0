@@ -22,6 +22,7 @@ public class CannonShotScript : MonoBehaviour
         {
 
             audioSource = GetComponent<AudioSource>();
+            audioSource.pitch = Random.Range(0.9f, 1.1f);
             audioSource.Play();
 
             // Instantiate the bullet at the spawner's position and rotation

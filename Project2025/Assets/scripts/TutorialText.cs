@@ -22,8 +22,13 @@ public class TutorialText : MonoBehaviour
     public GameObject focusPoint;
     FocusPoint focusPointScript;
 
+    public GameObject mainBody;
+    MainBodyMovement mainBodyMovement;
+
     void Start()
     {
+        mainBodyMovement = mainBody.GetComponent<MainBodyMovement>();
+
         textMeshProUGUI = gameObject.GetComponent<TextMeshProUGUI>();
         isActiveTextFade = false;
         textMeshProUGUI.color = new Color(textMeshProUGUI.color.r, textMeshProUGUI.color.g, textMeshProUGUI.color.b, 0);
@@ -35,6 +40,17 @@ public class TutorialText : MonoBehaviour
 
     private void Update()
     {
+
+        if (step == 1 || step == 0)
+        {
+            mainBodyMovement.enabled = false;
+        }
+        else
+        {
+            mainBodyMovement.enabled = true;
+        }
+        
+
         // Start the fade coroutine if it is active
         if (isActiveTextFade)
         {
