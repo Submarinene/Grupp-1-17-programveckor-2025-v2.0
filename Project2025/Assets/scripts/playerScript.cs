@@ -43,7 +43,7 @@ public class playerScript : MonoBehaviour
 
     IEnumerator GameOver()
     {
-        yield return new WaitForSeconds(3); // väntar # sekunder innan följande kod körs inom metoden
+        yield return new WaitForSeconds(1); // väntar # sekunder innan följande kod körs inom metoden
         SceneManager.LoadScene("GameOver");
     }
 }

@@ -3402,6 +3402,7 @@ GameObject:
   - component: {fileID: 630492486}
   - component: {fileID: 630492485}
   - component: {fileID: 630492489}
+  - component: {fileID: 630492490}
   m_Layer: 0
   m_Name: nanobott
   m_TagString: Player
@@ -3564,6 +3565,18 @@ MonoBehaviour:
   - {fileID: 1370690664}
   - {fileID: 369672174}
   - {fileID: 725130836}
+--- !u!114 &630492490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630492484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae7d7704735cd994e9cb21ed5166c8e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &631649102
 GameObject:
   m_ObjectHideFlags: 0
@@ -9434,7 +9447,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.27672952, g: 0, b: 0.0064214543, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
