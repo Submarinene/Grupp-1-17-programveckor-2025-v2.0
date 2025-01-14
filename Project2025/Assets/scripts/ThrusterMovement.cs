@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class ThrusterMovementScript : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class ThrusterMovementScript : MonoBehaviour
     public float positionSmoothness; // Controls the smoothness of position following
     public float rotationSmoothness; // Controls the smoothness of rotation following
 
-    private Vector3 movementDirection = Vector3.zero;
+    public Vector3 movementDirection = Vector3.zero;
 
     // Update is called once per frame
     void FixedUpdate()
@@ -34,6 +35,11 @@ public class ThrusterMovementScript : MonoBehaviour
         else if (Input.GetKey(KeyCode.A))
         {
             movementDirection += mainBody.transform.right; // A moves left
+        }
+
+        if(movementDirection == Vector3.zero)
+        {
+            movementDirection += -mainBody.transform.up; // W moves up (relative to MainBody's rotation)
         }
 
         // Normalize the movement direction if there's input to avoid overshooting

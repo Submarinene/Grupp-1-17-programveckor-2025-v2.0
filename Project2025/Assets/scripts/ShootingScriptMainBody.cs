@@ -45,12 +45,12 @@ public class ShootingScriptMainBody : MonoBehaviour
                 if(isRight)
                 {
                     isRight = false;
-                    cannonShotL.
+                    cannonShotL.SpawnBullet();
                 }
                 else
                 {
                     isRight = true;
-                    cannonShotR.
+                    cannonShotR.SpawnBullet();
                 }
             }
         }
