@@ -12,9 +12,9 @@ public class BreakableWallHealth : MonoBehaviour
     SpriteRenderer spriteRenderer;
 
     public GameObject paritcleSystemObject;
-    ParticleSystem particleSystem;
+    private ParticleSystem wallParticleSystem;
 
-    float twoSecondTimer = 0;
+    float destoryTime = -1f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,8 +23,21 @@ public class BreakableWallHealth : MonoBehaviour
         breakableWallHitSound = GetComponent<BreakableWallHitSound>();
         boxCollider2D = GetComponent<BoxCollider2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        particleSystem = GetComponent<ParticleSystem>();
+        wallParticleSystem = paritcleSystemObject.GetComponent<ParticleSystem>();
         boxCollider2D.enabled = true;
+    }
+
+    private void Update()
+    {
+        if (destoryTime != -1f)
+        {
+            if (Time.time >= destoryTime + 2)
+            {
+
+                Destroy(gameObject);
+
+            }
+        }
     }
 
     public void Hurt(int amount)
@@ -32,23 +45,18 @@ public class BreakableWallHealth : MonoBehaviour
         breakableWallHitSound.PlaySoundHit(health, maxHealth);
 
         health -= amount;
+
         if (health <= 0)
         {
-            if(twoSecondTimer == 0)
-            {
-                spriteRenderer.color = new Color(0, 0, 0, 0);
-                boxCollider2D.enabled = false;
+            destoryTime = Time.time;
 
-                breakableWallHitSound.PlaySoundDestroy();
+            spriteRenderer.color = new Color(0, 0, 0, 0);
+            boxCollider2D.enabled = false;
 
-                particleSystem.Play();
-            }
-            twoSecondTimer += Time.deltaTime;
+            breakableWallHitSound.PlaySoundDestroy();
 
-            if(twoSecondTimer >= 2)
-            {
-                Destroy(gameObject);
-            }
+            wallParticleSystem.Play();
+         
         }
     }
 }

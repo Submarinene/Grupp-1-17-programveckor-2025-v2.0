@@ -24,15 +24,21 @@ public class BulletScript : MonoBehaviour
     {
         Destroy(gameObject);
 
-        if(collision.gameObject.name == "BreakableWall")
+        if(collision.gameObject.layer == 8)
         {
             breakableWallHealth = collision.gameObject.GetComponent<BreakableWallHealth>();
             breakableWallHealth.Hurt(bulletDamage);
         }
-        else
+        else if(collision.gameObject.layer == 6)
         {
             enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
             enemyHealth.Hurt(bulletDamage);
+        }
+        else if (collision.gameObject.layer == 7)
+        {
+
+
+
         }
     }
 }
