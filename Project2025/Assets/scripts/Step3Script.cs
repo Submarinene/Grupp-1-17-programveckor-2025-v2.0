@@ -5,7 +5,7 @@ using System.Collections;
 public class Step3Script : MonoBehaviour
 {
     public TutorialText tutorialText; // Reference to the TutorialText object
-    private float stepStartTime = 0f; // Time when the specific step started
+    public float stepStartTime = 0f; // Time when the specific step started
     private bool thresholdCrossed = false; // Flag to check if threshold is crossed
 
     // Threshold time in seconds
@@ -18,8 +18,6 @@ public class Step3Script : MonoBehaviour
 
     public GameObject focusPoint;
     FocusPoint focusPointScript;
-
-    private AudioSource audioSource;
 
     void Start()
     {

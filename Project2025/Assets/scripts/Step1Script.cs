@@ -6,7 +6,7 @@ using Unity.VisualScripting;
 public class Step1Script : MonoBehaviour
 {
     private Vector3 lastMousePosition; // Store the last mouse position
-    private float totalDistanceMoved = 0f; // Accumulated distance
+    public float totalDistanceMoved = 0f; // Accumulated distance
 
     // Threshold in pixels
     public float movementThreshold = 3000f;

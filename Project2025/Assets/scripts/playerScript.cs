@@ -32,8 +32,8 @@ public class playerScript : MonoBehaviour
             return;
         hearts[lives].GetComponent<Animator>().SetTrigger("hit"); //sätter igång explosion
         // hearts[lives].GetComponent<Image>().enabled = false; //tar bort ett hjärta
-        transform.position = new Vector2(-7, 2); //makes the player respawn
-        if (lives == 2)
+        transform.position = new Vector2(-7, 1); //makes the player respawn
+        if (lives == 0)
         {
             StartCoroutine("GameOver");
             //change to game over scene
@@ -43,7 +43,7 @@ public class playerScript : MonoBehaviour
 
     IEnumerator GameOver()
     {
-        yield return new WaitForSeconds(3); // väntar # sekunder innan följande kod körs inom metoden
+        yield return new WaitForSeconds(1); // väntar # sekunder innan följande kod körs inom metoden
         SceneManager.LoadScene("GameOver");
     }
 }
