@@ -2,30 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Step6Script : MonoBehaviour
+public class Step7Script : MonoBehaviour
 {
-    public GameObject mainBody;
-    ShootingScriptMainBody shootingScriptMainBody;
+    bool isActivated = false;
 
     public GameObject tutorialTextObject;
     TutorialText tutorialTextScript;
 
-    public float shotsThreshold;
-
-    bool isActivated = false;
-
     AudioSource audioSource;
 
-    private void Start()
+    public GameObject breakableWallOne;
+    BreakableWallHealth breakableWallHealth;
+
+    // Start is called before the first frame update
+    void Start()
     {
-        tutorialTextScript = tutorialTextObject.GetComponent<TutorialText>();
-        shootingScriptMainBody = mainBody.GetComponent<ShootingScriptMainBody>();
         audioSource = GetComponent<AudioSource>();
+        tutorialTextScript = tutorialTextObject.GetComponent<TutorialText>();
+        breakableWallHealth = breakableWallOne.GetComponent<BreakableWallHealth>();
     }
 
     private void Update()
     {
-        if (shootingScriptMainBody.shotsFired >= shotsThreshold && !isActivated)
+        if ((breakableWallHealth.health <= 0 && !isActivated) || Input.GetKeyDown(KeyCode.RightArrow))
         {
             tutorialTextScript.isActiveTextFade = true;
             isActivated = true;
@@ -33,5 +32,4 @@ public class Step6Script : MonoBehaviour
             audioSource.Play();
         }
     }
-
 }

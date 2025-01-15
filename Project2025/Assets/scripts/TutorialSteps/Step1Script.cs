@@ -57,7 +57,7 @@ public class Step1Script : MonoBehaviour
             lastMousePosition = currentMousePosition;
 
             // Check if the threshold is crossed
-            if ((!thresholdCrossed && totalDistanceMoved >= movementThreshold) && !isActivated)
+            if (((!thresholdCrossed && totalDistanceMoved >= movementThreshold) && !isActivated) || Input.GetKeyDown(KeyCode.RightArrow))
             {
                 thresholdCrossed = true;
                 tutorialText.isActiveTextFade = true;
