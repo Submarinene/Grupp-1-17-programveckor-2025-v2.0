@@ -19,8 +19,6 @@ public class BreakableWallHitSound : MonoBehaviour
     public void PlaySoundDestroy()
     {
         audioSources[1].Play();
-
-        Destroy(gameObject);
     }
 
 }

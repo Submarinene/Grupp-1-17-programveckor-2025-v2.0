@@ -5,6 +5,7 @@ using UnityEngine;
 public class BulletScript : MonoBehaviour
 {
     EnemyHealth enemyHealth;
+    BreakableWallHealth breakableWallHealth;
 
     public int bulletDamage = 1;
 
@@ -23,8 +24,15 @@ public class BulletScript : MonoBehaviour
     {
         Destroy(gameObject);
 
-        enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
-
-        enemyHealth.Hurt(bulletDamage);
+        if(collision.gameObject.name == "BreakableWall")
+        {
+            breakableWallHealth = collision.gameObject.GetComponent<BreakableWallHealth>();
+            breakableWallHealth.Hurt(bulletDamage);
+        }
+        else
+        {
+            enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
+            enemyHealth.Hurt(bulletDamage);
+        }
     }
 }
