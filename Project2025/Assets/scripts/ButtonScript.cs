@@ -7,6 +7,7 @@ public class ButtonScript : MonoBehaviour
 {
     bool isStartButtonPressed = false;
     bool isTutorialButtonPressed = false;
+    bool isExitButtonPressed = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,17 +25,24 @@ public class ButtonScript : MonoBehaviour
         {
             SceneManager.LoadScene(3);
         }
+        else if (isExitButtonPressed)
+        {
+            Application.Quit();
+        }
     }
 
     public void OnStartButtonClick()
     {
-        Debug.Log("You pressed the start button.");
         isStartButtonPressed = true;
     }
 
     public void OnTutorialButtonClick()
-    {
-        Debug.Log("You pressed tutorial button");
+    {;
         isTutorialButtonPressed = true;
+    }
+
+    public void OnExitButtonClick()
+    {
+        isExitButtonPressed = true;
     }
 }
