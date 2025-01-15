@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class BulletScript : MonoBehaviour
 {
+    EnemyHealth enemyHealth;
+
+    public int bulletDamage = 1;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,9 +19,12 @@ public class BulletScript : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        Destroy(gameObject);
+
+        enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
+
+        enemyHealth.Hurt(bulletDamage);
     }
 }
