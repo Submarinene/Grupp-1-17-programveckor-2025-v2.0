@@ -25,7 +25,7 @@ public class Step6Script : MonoBehaviour
 
     private void Update()
     {
-        if (shootingScriptMainBody.shotsFired >= shotsThreshold && !isActivated)
+        if ((shootingScriptMainBody.shotsFired >= shotsThreshold && !isActivated) || Input.GetKeyDown(KeyCode.RightArrow))
         {
             tutorialTextScript.isActiveTextFade = true;
             isActivated = true;

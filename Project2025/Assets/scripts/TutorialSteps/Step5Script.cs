@@ -21,9 +21,9 @@ public class Step5Script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (tutorialText.step == 5 && !isActivated)
+        if ((tutorialText.step == 5 && !isActivated) || Input.GetKeyDown(KeyCode.RightArrow))
         {
-            if (focusPoint.mode == 1)
+            if (focusPoint.mode == 1 || Input.GetKeyDown(KeyCode.RightArrow))
             {
                 tutorialText.isActiveTextFade = true;
                 isActivated = true;

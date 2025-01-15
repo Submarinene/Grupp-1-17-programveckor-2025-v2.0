@@ -39,17 +39,17 @@ public class PlayerCollisions : MonoBehaviour
             audioSources[1].volume = collisionForce / 33;
             audioSources[1].Play();
         }
-    }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Debug.Log("You got hit");
-        health--; //lives = lives -1;
-        //hjärtan[].GetComponent<Image>().enabled = false;
-        transform.position = new Vector2(0, -2); //makes the player respawn
-        if (health == 0)
+        if (collision.gameObject.layer == 6)
         {
-            SceneManager.LoadScene(1);
+            Debug.Log("You got hit");
+            health--; //lives = lives -1;
+                      //hjärtan[].GetComponent<Image>().enabled = false;
+            transform.position = new Vector2(0, -2); //makes the player respawn
+            if (health == 0)
+            {
+                SceneManager.LoadScene(1);
+            }
         }
     }
 }

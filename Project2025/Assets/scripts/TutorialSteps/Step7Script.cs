@@ -24,7 +24,7 @@ public class Step7Script : MonoBehaviour
 
     private void Update()
     {
-        if (breakableWallHealth.health <= 0 && !isActivated)
+        if ((breakableWallHealth.health <= 0 && !isActivated) || Input.GetKeyDown(KeyCode.RightArrow))
         {
             tutorialTextScript.isActiveTextFade = true;
             isActivated = true;

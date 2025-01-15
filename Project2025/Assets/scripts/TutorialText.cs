@@ -18,8 +18,8 @@ public class TutorialText : MonoBehaviour
         "Right-Click again to bring back the focuspoint",
         "Left-Click to shoot",
         "Break the wall to the right",
-        "Find and eleminate the synthetic Canser-cells",
-        "Bring back the Canser-cells to the Start-Area"
+        "Find and eleminate the synthetic Cancer-cells",
+        "Bring back the Cancer-cells to the Start-Area"
     };
 
     public GameObject focusPoint;
