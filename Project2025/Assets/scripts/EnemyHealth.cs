@@ -4,19 +4,23 @@ public class EnemyHealth : MonoBehaviour
 {
     [SerializeField]
     public int maxHealth = 3;
-    int health;
+    int currentHealth;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        health = maxHealth;
+        currentHealth = maxHealth;
     }
 
-    public void Hurt(int amount)
+    private void Update()
     {
-        health -= amount;
-        if (health <= 0)
+        if (currentHealth <= 0)
         {
             Destroy(gameObject);
         }
+    }
+    public void Hurt(int hurtDamage)
+    {
+        currentHealth -= hurtDamage;
+       
     }
 }
