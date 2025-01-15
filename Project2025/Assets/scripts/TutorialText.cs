@@ -16,14 +16,21 @@ public class TutorialText : MonoBehaviour
         "The Player moves towards and around the Focus-Point",
         "Right-Click to place the focuspoint",
         "Right-Click again to bring back the focuspoint",
-        "Left-Click to shoot"
+        "Left-Click to shoot",
+        "Break the wall to the right",
+        "Complete the level"
     };
 
     public GameObject focusPoint;
     FocusPoint focusPointScript;
 
+    public GameObject mainBody;
+    MainBodyMovement mainBodyMovement;
+
     void Start()
     {
+        mainBodyMovement = mainBody.GetComponent<MainBodyMovement>();
+
         textMeshProUGUI = gameObject.GetComponent<TextMeshProUGUI>();
         isActiveTextFade = false;
         textMeshProUGUI.color = new Color(textMeshProUGUI.color.r, textMeshProUGUI.color.g, textMeshProUGUI.color.b, 0);
@@ -35,6 +42,17 @@ public class TutorialText : MonoBehaviour
 
     private void Update()
     {
+
+        if (step == 1 || step == 0)
+        {
+            mainBodyMovement.enabled = false;
+        }
+        else
+        {
+            mainBodyMovement.enabled = true;
+        }
+        
+
         // Start the fade coroutine if it is active
         if (isActiveTextFade)
         {
