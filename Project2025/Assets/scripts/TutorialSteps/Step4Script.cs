@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Step5Script : MonoBehaviour
+public class Step4Script : MonoBehaviour
 {
     TutorialText tutorialText;
 
@@ -21,9 +21,9 @@ public class Step5Script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (tutorialText.step == 5 && !isActivated)
+        if((tutorialText.step == 4 && !isActivated) || Input.GetKeyDown(KeyCode.RightArrow))
         {
-            if (focusPoint.mode == 1)
+            if(focusPoint.mode == 2 || Input.GetKeyDown(KeyCode.RightArrow))
             {
                 tutorialText.isActiveTextFade = true;
                 isActivated = true;

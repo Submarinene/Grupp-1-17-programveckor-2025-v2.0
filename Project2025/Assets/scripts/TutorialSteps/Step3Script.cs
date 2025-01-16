@@ -47,7 +47,7 @@ public class Step3Script : MonoBehaviour
             }
 
             // Check if the threshold time has passed
-            if ((!thresholdCrossed && Time.time - stepStartTime >= timeThreshold) && !isActivated)
+            if (((!thresholdCrossed && Time.time - stepStartTime >= timeThreshold) && !isActivated) || Input.GetKeyDown(KeyCode.RightArrow))
             {
                 thresholdCrossed = true;
                 tutorialText.isActiveTextFade = true;

@@ -43,7 +43,7 @@ public class Step2Script : MonoBehaviour
             }
 
             // Check if the threshold is crossed
-            if ((!thresholdCrossed && totalKeyPressTime >= pressThreshold) && !isActivated)
+            if (((!thresholdCrossed && totalKeyPressTime >= pressThreshold) && !isActivated) || Input.GetKeyDown(KeyCode.RightArrow))
             {
                 thresholdCrossed = true;
                 tutorialText.isActiveTextFade = true;
