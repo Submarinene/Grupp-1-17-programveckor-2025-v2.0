@@ -42,7 +42,7 @@ public class TheodorEnemyScript : MonoBehaviour
 
         distanceToTarget = Vector3.Distance(target.transform.position, transform.position);
 
-        if (distanceToTarget <= targetRangeDistanche|| enemyHealth.health < enemyHealth.maxHealth)
+        if (distanceToTarget <= targetRangeDistanche|| enemyHealth.currentHealth < enemyHealth.maxHealth)
         {
             hasSeenTarget = true;
         }
