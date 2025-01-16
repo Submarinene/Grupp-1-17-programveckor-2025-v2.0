@@ -11,10 +11,10 @@ TagManager:
   - Player
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Enemies
+  - Wall
+  - BreakableWall
+  - Room
   - 
   - 
   - 
@@ -40,6 +40,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 3141189149
     locked: 0
   - name: InGameUI
     uniqueID: 2178494341

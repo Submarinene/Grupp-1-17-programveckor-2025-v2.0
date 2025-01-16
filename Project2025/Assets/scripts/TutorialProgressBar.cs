@@ -66,7 +66,7 @@ public class TutorialProgressBar : MonoBehaviour
         }
 
 
-        if(tutorialText.step == 1 || tutorialText.step == 2 || tutorialText.step == 3 || tutorialText.step == 6 || tutorialText.step == 7)
+        if(tutorialText.step == 1 || tutorialText.step == 2 || tutorialText.step == 3 || tutorialText.step == 6 || tutorialText.step == 7 || tutorialText.step == 8)
         {
             image.color = new Color(image.color.r, image.color.g, image.color.b, textMeshPro.color.a);
             progressBarImage.color = new Color(progressBarImage.color.r, progressBarImage.color.g, progressBarImage.color.b, textMeshPro.color.a);
