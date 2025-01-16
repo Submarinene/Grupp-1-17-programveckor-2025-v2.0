@@ -83,13 +83,15 @@ public class MainBodyMovement : MonoBehaviour
         // Apply the total force scaled by gravityScale and top speed
         playerRB.AddForce(force.normalized * gravityScale * maxSpeed);
 
+
+        
         // Clamp the velocity to the maximum speed
         if (playerRB.velocity.magnitude > maxSpeed)
         {
             playerRB.velocity = playerRB.velocity.normalized * maxSpeed;
         }
 
-        audioSources[0].volume = gravityScale*2;
+        audioSources[0].volume = gravityScale * 2;
     }
 
 }

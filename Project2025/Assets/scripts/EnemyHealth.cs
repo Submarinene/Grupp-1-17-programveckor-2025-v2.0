@@ -15,6 +15,7 @@ public class EnemyHealth : MonoBehaviour
     public void Hurt(int amount)
     {
 
+
         currentHealth -= amount;
         if (currentHealth <= 0)
         {
