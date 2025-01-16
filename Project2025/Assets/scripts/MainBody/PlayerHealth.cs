@@ -11,11 +11,54 @@ public class PlayerCollisions : MonoBehaviour
 
     AudioSource[] audioSources;
 
+    bool isInvisible = false;
+
+    public float invisibleTime = 3;
+    public float invisibleTimer = 0;
+
+
+    PolygonCollider2D polygonCollider2D;
+    SpriteRenderer spriteRenderer;
+
+    public GameObject[] bodyParts;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         health = maxHealth;
         audioSources = GetComponents<AudioSource>();
+        polygonCollider2D = GetComponent<PolygonCollider2D>();
+    }
+
+    private void Update()
+    {
+        if(isInvisible)
+        {
+            polygonCollider2D.enabled = false;
+
+            invisibleTimer += Time.deltaTime;
+
+            for(int i = 0; i < bodyParts.Length; i++)
+            {
+                spriteRenderer = bodyParts[i].GetComponent<SpriteRenderer>();
+                spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 0.5f);
+            }
+
+            if(invisibleTimer >= invisibleTime)
+            {
+                invisibleTimer = 0;
+                isInvisible = false;
+            }
+        }
+        else
+        {
+            for (int i = 0; i < bodyParts.Length; i++)
+            {
+                spriteRenderer = bodyParts[i].GetComponent<SpriteRenderer>();
+                spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 1f);
+            }
+            polygonCollider2D.enabled = true;
+        }
     }
 
 
@@ -45,7 +88,10 @@ public class PlayerCollisions : MonoBehaviour
             Debug.Log("You got hit");
             health--; //lives = lives -1;
                       //hjärtan[].GetComponent<Image>().enabled = false;
-            transform.position = new Vector2(0, -2); //makes the player respawn
+
+            polygonCollider2D.enabled = false;
+            isInvisible = true;
+
             if (health == 0)
             {
                 SceneManager.LoadScene(1);
