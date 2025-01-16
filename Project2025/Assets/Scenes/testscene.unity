@@ -135,7 +135,6 @@ GameObject:
   - component: {fileID: 41827716}
   - component: {fileID: 41827717}
   - component: {fileID: 41827721}
-  - component: {fileID: 41827722}
   m_Layer: 0
   m_Name: vitblodkropp0002
   m_TagString: Enemy
@@ -321,20 +320,6 @@ PolygonCollider2D:
       - {x: 0.5, y: -0.5}
       - {x: 0.5, y: 0.5}
   m_UseDelaunayMesh: 0
---- !u!114 &41827722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 41827712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1849b0bca4010e843b640560e2ba722b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 811391421}
-  moveSpeed: 2
 --- !u!1 &448761567
 GameObject:
   m_ObjectHideFlags: 0
