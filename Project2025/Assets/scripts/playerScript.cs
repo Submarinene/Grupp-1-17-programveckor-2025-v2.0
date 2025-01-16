@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class playerScript : MonoBehaviour
+public class PlayerScript : MonoBehaviour
 {
     int lives;
 
@@ -32,7 +32,7 @@ public class playerScript : MonoBehaviour
             return;
         hearts[lives].GetComponent<Animator>().SetTrigger("hit"); //sätter igång explosion
         // hearts[lives].GetComponent<Image>().enabled = false; //tar bort ett hjärta
-        transform.position = new Vector2(-7, 1); //makes the player respawn
+        transform.position = new Vector3(-5, -1, -1); //makes the player respawn
         if (lives == 0)
         {
             StartCoroutine("GameOver");
