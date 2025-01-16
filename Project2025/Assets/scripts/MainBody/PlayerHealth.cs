@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -62,10 +63,7 @@ public class PlayerCollisions : MonoBehaviour
     }
 
 
-    void GameOver()
-    {
-        SceneManager.LoadScene(1);
-    }
+   
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -89,13 +87,23 @@ public class PlayerCollisions : MonoBehaviour
             health--; //lives = lives -1;
                       //hjärtan[].GetComponent<Image>().enabled = false;
 
+            hjärtan[health].GetComponent<Animator>().SetTrigger("hit"); //sätter igång explosion
             polygonCollider2D.enabled = false;
             isInvisible = true;
 
             if (health == 0)
             {
-                SceneManager.LoadScene(1);
+                StartCoroutine("GameOver");
+                //change to game over scene
             }
+
         }
+
+       
+    }
+    IEnumerator GameOver()
+    {
+        yield return new WaitForSeconds(1); // väntar # sekunder innan följande kod körs inom metoden
+        SceneManager.LoadScene("GameOver");
     }
 }
