@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5c3128e8d0f079e498ef852a8be9ccc0
+guid: 17829241f3e4c6b44be928a6c03b86b5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,11 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-<<<<<<< HEAD
-    filterMode: 1
-=======
     filterMode: 0
->>>>>>> main
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -47,20 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-<<<<<<< HEAD
-  spriteMode: 1
-=======
   spriteMode: 2
->>>>>>> main
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-<<<<<<< HEAD
-  spritePixelsToUnits: 100
-=======
   spritePixelsToUnits: 16
->>>>>>> main
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -84,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -107,16 +95,13 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-<<<<<<< HEAD
-    sprites: []
-=======
     sprites:
     - serializedVersion: 2
-      name: Steep slope 2_0
+      name: Curved Steep slope_0
       rect:
         serializedVersion: 2
-        x: 23
-        y: 73
+        x: 6
+        y: 68
         width: 16
         height: 16
       alignment: 0
@@ -126,18 +111,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7276a95fa2982347bb32e28c1d83fc8
-      internalID: -1129795161
+      spriteID: 4a894c2f79cf07b4c82421a315d7962f
+      internalID: 22743870
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Steep slope 2_1
+      name: Curved Steep slope_1
       rect:
         serializedVersion: 2
-        x: 39
-        y: 73
+        x: 22
+        y: 68
         width: 16
         height: 16
       alignment: 0
@@ -147,18 +132,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9de7336b22c9704997050eb595c8d72
-      internalID: -1982463463
+      spriteID: 53ec8a54eeb35054399dcf989e24eb1a
+      internalID: 1347418793
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Steep slope 2_2
+      name: Curved Steep slope_2
       rect:
         serializedVersion: 2
-        x: 55
-        y: 73
+        x: 38
+        y: 68
         width: 16
         height: 16
       alignment: 0
@@ -168,18 +153,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae7de37b62b76f14dadeb0484decc728
-      internalID: 1709087953
+      spriteID: f43196cf867904c44b72ba8137d7ee85
+      internalID: -1162997268
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Steep slope 2_3
+      name: Curved Steep slope_3
       rect:
         serializedVersion: 2
-        x: 71
-        y: 73
+        x: 54
+        y: 68
         width: 16
         height: 16
       alignment: 0
@@ -189,18 +174,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef85d11cec276f444b801dea19872f63
-      internalID: 1959584797
+      spriteID: 234849c45acade9489805fac66559a0c
+      internalID: -1906420007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Steep slope 2_4
+      name: Curved Steep slope_4
       rect:
         serializedVersion: 2
-        x: 23
-        y: 57
+        x: 6
+        y: 52
         width: 16
         height: 16
       alignment: 0
@@ -210,18 +195,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04083e9b922e9ae418dfbc43d0fc36e5
-      internalID: 60613449
+      spriteID: 09d1d84f147d8114393127c754331bc0
+      internalID: -1923348941
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Steep slope 2_5
+      name: Curved Steep slope_5
       rect:
         serializedVersion: 2
-        x: 39
-        y: 57
+        x: 22
+        y: 52
         width: 16
         height: 16
       alignment: 0
@@ -231,18 +216,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87a0650cf36b9f4498259fac5ef2b3c3
-      internalID: -1216619345
+      spriteID: 02c42d4f53bad234ebc41c001ffdfb13
+      internalID: -55178350
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Steep slope 2_6
+      name: Curved Steep slope_6
       rect:
         serializedVersion: 2
-        x: 55
-        y: 57
+        x: 38
+        y: 52
         width: 16
         height: 16
       alignment: 0
@@ -252,18 +237,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e7bdc1f8f6795d45902a87499f3b49d
-      internalID: -1467031735
+      spriteID: 8c58e250583719048aaad6d26301273a
+      internalID: 2038968027
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Steep slope 2_7
+      name: Curved Steep slope_7
       rect:
         serializedVersion: 2
-        x: 71
-        y: 57
+        x: 54
+        y: 52
         width: 16
         height: 16
       alignment: 0
@@ -273,18 +258,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4eb5bcd2c9ad80a4a8ad605e5055d78b
-      internalID: -1501460609
+      spriteID: b4824b564ec354244bdb978b9f1a97db
+      internalID: -577702490
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Steep slope 2_8
+      name: Curved Steep slope_8
       rect:
         serializedVersion: 2
-        x: 7
-        y: 41
+        x: 6
+        y: 36
         width: 16
         height: 16
       alignment: 0
@@ -294,18 +279,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53603f7d2b1b30649984520942d1c6cd
-      internalID: -199419006
+      spriteID: 2ae9342aa08ed0546a066dd3cdea8614
+      internalID: 1879511042
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Steep slope 2_9
+      name: Curved Steep slope_9
       rect:
         serializedVersion: 2
-        x: 23
-        y: 41
+        x: 22
+        y: 36
         width: 16
         height: 16
       alignment: 0
@@ -315,18 +300,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bf40c49bfc53a94da2061390fb9b7ef
-      internalID: 2069305439
+      spriteID: 02bf397187d324b49acebe1cc5b7a949
+      internalID: 1332012993
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Steep slope 2_10
+      name: Curved Steep slope_10
       rect:
         serializedVersion: 2
-        x: 39
-        y: 41
+        x: 38
+        y: 36
         width: 16
         height: 16
       alignment: 0
@@ -336,18 +321,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58e7d3097218dbd4ca87e6badbac68b8
-      internalID: 1988615719
+      spriteID: d38a9850781a3094cb08dd6d4d60471b
+      internalID: -530249690
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Steep slope 2_11
+      name: Curved Steep slope_11
       rect:
         serializedVersion: 2
-        x: 55
-        y: 41
+        x: 54
+        y: 36
         width: 16
         height: 16
       alignment: 0
@@ -357,18 +342,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aba0ec20c50d4944d99eea0e1de84640
-      internalID: 1087790110
+      spriteID: af474af57ae9ca648b5102e61cc3b0be
+      internalID: -1134005420
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Steep slope 2_12
+      name: Curved Steep slope_12
       rect:
         serializedVersion: 2
-        x: 71
-        y: 41
+        x: 70
+        y: 36
         width: 16
         height: 16
       alignment: 0
@@ -378,18 +363,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac12cd076ecc53d46a0120e86f912170
-      internalID: -1985773892
+      spriteID: 2564afd7317d3ec4491f1fa19383d502
+      internalID: -959845244
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Steep slope 2_13
+      name: Curved Steep slope_13
       rect:
         serializedVersion: 2
-        x: 7
-        y: 25
+        x: 22
+        y: 20
         width: 16
         height: 16
       alignment: 0
@@ -399,18 +384,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6419a36d4d3bb4141bb48bff23712261
-      internalID: -1068948619
+      spriteID: 2a2fce744d80ee94384b016c85bcf849
+      internalID: 1219671625
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Steep slope 2_14
+      name: Curved Steep slope_14
       rect:
         serializedVersion: 2
-        x: 23
-        y: 25
+        x: 38
+        y: 20
         width: 16
         height: 16
       alignment: 0
@@ -420,18 +405,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7ce5aaf972ed9048b601e3f7e58b8bd
-      internalID: -1186130452
+      spriteID: 745fc70e78ef3f849bc247afd80569bf
+      internalID: 531357020
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Steep slope 2_15
+      name: Curved Steep slope_15
       rect:
         serializedVersion: 2
-        x: 39
-        y: 25
+        x: 54
+        y: 20
         width: 16
         height: 16
       alignment: 0
@@ -441,18 +426,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9dd4171ffb852024d9699550e4275f06
-      internalID: -831173011
+      spriteID: 35b33abe9ddd1c046883dbad733f6f9c
+      internalID: -1620232217
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Steep slope 2_16
+      name: Curved Steep slope_16
       rect:
         serializedVersion: 2
-        x: 55
-        y: 25
+        x: 70
+        y: 20
         width: 16
         height: 16
       alignment: 0
@@ -462,18 +447,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95f513f4bfc026944a3b9b04f0044936
-      internalID: -1035290795
+      spriteID: 59a667cbf7bcb44459fde1bcc4483c20
+      internalID: -1060116501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Steep slope 2_17
+      name: Curved Steep slope_17
       rect:
         serializedVersion: 2
-        x: 7
-        y: 9
+        x: 22
+        y: 4
         width: 16
         height: 16
       alignment: 0
@@ -483,18 +468,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d1f4be33a6e23246bd5836ab3d92010
-      internalID: 339445053
+      spriteID: d266c97d4c9d3bb42a53c394d7b77483
+      internalID: -1701018126
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Steep slope 2_18
+      name: Curved Steep slope_18
       rect:
         serializedVersion: 2
-        x: 23
-        y: 9
+        x: 38
+        y: 4
         width: 16
         height: 16
       alignment: 0
@@ -504,18 +489,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e5372cd142e5fa438dea6c007ce78f8
-      internalID: 1589964240
+      spriteID: 5924b56702cc1094cb8495adb3018632
+      internalID: -2047352586
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Steep slope 2_19
+      name: Curved Steep slope_19
       rect:
         serializedVersion: 2
-        x: 39
-        y: 9
+        x: 54
+        y: 4
         width: 16
         height: 16
       alignment: 0
@@ -525,18 +510,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb8d9fefb68a6fd43b0df276f563b107
-      internalID: -953438793
+      spriteID: 1fb26960680fddb46874b24716c4fc83
+      internalID: -398739900
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Steep slope 2_20
+      name: Curved Steep slope_20
       rect:
         serializedVersion: 2
-        x: 55
-        y: 9
+        x: 70
+        y: 4
         width: 16
         height: 16
       alignment: 0
@@ -546,13 +531,12 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7159f0e184306e1489d5dbbfeb028a9f
-      internalID: -2056694739
+      spriteID: 86104426407700947a74358e987d4d17
+      internalID: 556433462
       vertices: []
       indices: 
       edges: []
       weights: []
->>>>>>> main
     outline: []
     physicsShape: []
     bones: []
@@ -563,32 +547,28 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-<<<<<<< HEAD
-    nameFileIdTable: {}
-=======
     nameFileIdTable:
-      Steep slope 2_0: -1129795161
-      Steep slope 2_1: -1982463463
-      Steep slope 2_10: 1988615719
-      Steep slope 2_11: 1087790110
-      Steep slope 2_12: -1985773892
-      Steep slope 2_13: -1068948619
-      Steep slope 2_14: -1186130452
-      Steep slope 2_15: -831173011
-      Steep slope 2_16: -1035290795
-      Steep slope 2_17: 339445053
-      Steep slope 2_18: 1589964240
-      Steep slope 2_19: -953438793
-      Steep slope 2_2: 1709087953
-      Steep slope 2_20: -2056694739
-      Steep slope 2_3: 1959584797
-      Steep slope 2_4: 60613449
-      Steep slope 2_5: -1216619345
-      Steep slope 2_6: -1467031735
-      Steep slope 2_7: -1501460609
-      Steep slope 2_8: -199419006
-      Steep slope 2_9: 2069305439
->>>>>>> main
+      Curved Steep slope_0: 22743870
+      Curved Steep slope_1: 1347418793
+      Curved Steep slope_10: -530249690
+      Curved Steep slope_11: -1134005420
+      Curved Steep slope_12: -959845244
+      Curved Steep slope_13: 1219671625
+      Curved Steep slope_14: 531357020
+      Curved Steep slope_15: -1620232217
+      Curved Steep slope_16: -1060116501
+      Curved Steep slope_17: -1701018126
+      Curved Steep slope_18: -2047352586
+      Curved Steep slope_19: -398739900
+      Curved Steep slope_2: -1162997268
+      Curved Steep slope_20: 556433462
+      Curved Steep slope_3: -1906420007
+      Curved Steep slope_4: -1923348941
+      Curved Steep slope_5: -55178350
+      Curved Steep slope_6: 2038968027
+      Curved Steep slope_7: -577702490
+      Curved Steep slope_8: 1879511042
+      Curved Steep slope_9: 1332012993
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
