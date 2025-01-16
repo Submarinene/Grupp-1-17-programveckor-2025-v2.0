@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class PlayerCollisions : MonoBehaviour
 {
-    [SerializeField]
+   /* [SerializeField]
     GameObject[] hjärtan;
     int maxHealth = 3;
     int health;
@@ -51,5 +51,5 @@ public class PlayerCollisions : MonoBehaviour
                 SceneManager.LoadScene(1);
             }
         }
-    }
+    } */
 }
