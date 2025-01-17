@@ -43,7 +43,7 @@ public class TutorialProgressBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (tutorialText.step == 0)
+        if (tutorialText.step == 0) 
         {
             image.color = new Color(image.color.r, image.color.g, image.color.b, 0);
             progressBarImage.color = new Color(progressBarImage.color.r, progressBarImage.color.g, progressBarImage.color.b, 0);
