@@ -5,7 +5,7 @@ using UnityEngine;
 public class CannonShotScript : MonoBehaviour
 {
     public GameObject bulletPrefab;
-
+    //EnemyHealth enemyHealth;
     public float bulletForce = 10;
 
     CannonMovementScript cannonMovementScript;
@@ -44,4 +44,6 @@ public class CannonShotScript : MonoBehaviour
             Debug.LogError("Bullet prefab is not assigned!");
         }
     }
+
+    
 }
