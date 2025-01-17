@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Playshooting : MonoBehaviour
 {
-
+   
     public GameObject cannonL;
     public GameObject cannonR;
-
+    EnemyHealth enemyHealth;
     CannonShotScript cannonShotL;
     CannonShotScript cannonShotR;
 
@@ -65,4 +65,5 @@ public class Playshooting : MonoBehaviour
             }
         }
     }
+    
 }

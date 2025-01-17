@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6411037872823713651}
   - component: {fileID: 273823395249535757}
   - component: {fileID: -1982399766081582249}
+  - component: {fileID: 7628338361746439019}
   m_Layer: 0
   m_Name: lazer skott skin
   m_TagString: Untagged
@@ -158,3 +159,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &7628338361746439019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3269730354528186582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fa9649dc39ee1c47b87ab6eb366a162, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
