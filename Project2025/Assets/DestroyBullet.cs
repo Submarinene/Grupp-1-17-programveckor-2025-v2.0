@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class DestroyBullet : MonoBehaviour
 {
-    EnemyHealth enemyHealth;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,8 +19,8 @@ public class DestroyBullet : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            enemyHealth.Hurt(1);
-            //Destroy(gameObject);
+            other.gameObject.GetComponent<EnemyHealth>().Hurt(1);
+            Destroy(gameObject);
         }
         else if (other.gameObject.CompareTag("Tiles"))
         {
