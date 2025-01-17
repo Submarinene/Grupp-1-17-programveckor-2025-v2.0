@@ -983,8 +983,8 @@ Transform:
   - {fileID: 1512189541}
   - {fileID: 300170165}
   - {fileID: 1623929576}
-  - {fileID: 1116672060}
   - {fileID: 1363121310}
+  - {fileID: 1116672060}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!1 &1116672055
@@ -1115,7 +1115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b74e2c3ad08575e4c8895322f798365c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: -2253911629886400664, guid: 3249ebef1b6c7e843828e5ac50cf6504, type: 3}
+  bulletPrefab: {fileID: 3269730354528186582, guid: a7c2658589c097e44b9bf457c5d70454, type: 3}
   bulletForce: 40
 --- !u!114 &1116672058
 MonoBehaviour:
@@ -1555,7 +1555,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 0.5}
+  m_LocalScale: {x: 1.5000001, y: 1.5000001, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 993429864}
@@ -1668,7 +1668,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b74e2c3ad08575e4c8895322f798365c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: -2253911629886400664, guid: 3249ebef1b6c7e843828e5ac50cf6504, type: 3}
+  bulletPrefab: {fileID: 3269730354528186582, guid: a7c2658589c097e44b9bf457c5d70454, type: 3}
   bulletForce: 40
 --- !u!114 &1363121313
 MonoBehaviour:
@@ -2488,7 +2488,7 @@ MonoBehaviour:
   cannonL: {fileID: 1116672055}
   cannonR: {fileID: 1363121309}
   isShootActive: 0
-  shootSpeed: 0.1666667
+  shootSpeed: 1
   timeSinceShot: 0
   shotsFired: 0
 --- !u!1 &1566733002
