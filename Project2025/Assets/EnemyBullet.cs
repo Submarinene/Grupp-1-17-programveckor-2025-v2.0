@@ -20,14 +20,15 @@ public class EnemyBullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Tiles"))
         {
-            Destroy(gameObject);
+            Destroy(gameObject, 1f);
         }
+        
     }
 }

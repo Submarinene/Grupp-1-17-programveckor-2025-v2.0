@@ -144,11 +144,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8905353810490038146, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.02
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 8905353810490038146, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.38
+      value: -13.5
       objectReference: {fileID: 0}
     - target: {fileID: 8905353810490038146, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -946,7 +946,7 @@ GameObject:
   - component: {fileID: 993429863}
   m_Layer: 0
   m_Name: player
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -976,7 +976,7 @@ Transform:
   m_GameObject: {fileID: 993429862}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -5, y: -1.5, z: -1}
+  m_LocalPosition: {x: 163.91, y: -30.54, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -2516,7 +2516,7 @@ GameObject:
   - component: {fileID: 1566733006}
   m_Layer: 0
   m_Name: Tilemap
-  m_TagString: Untagged
+  m_TagString: Tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
