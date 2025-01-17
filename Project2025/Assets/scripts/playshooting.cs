@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayShooting : MonoBehaviour
+public class Playshooting : MonoBehaviour
 {
 
     public GameObject cannonL;
@@ -11,11 +11,13 @@ public class PlayShooting : MonoBehaviour
     CannonShotScript cannonShotL;
     CannonShotScript cannonShotR;
 
-  
+  //  public GameObject tutorialTextObject;
+   // TutorialText tutorialTextScript;
+
     public bool isShootActive;
     public float shootSpeed;
     public float timeSinceShot = 0;
-  //  bool isRight = false;
+    bool isRight = false;
 
     public float shotsFired;
 
@@ -23,6 +25,8 @@ public class PlayShooting : MonoBehaviour
     {
         cannonShotL = cannonL.GetComponent<CannonShotScript>();
         cannonShotR = cannonR.GetComponent<CannonShotScript>();
+       // tutorialTextScript = tutorialTextObject.GetComponent<TutorialText>();
+
         isShootActive = true;
     }
 
@@ -33,6 +37,32 @@ public class PlayShooting : MonoBehaviour
             timeSinceShot += Time.deltaTime;
         }
 
-       
+
+        if (Input.GetMouseButton(0) && isShootActive && timeSinceShot >= shootSpeed)
+        {
+            timeSinceShot -= shootSpeed;
+
+            shotsFired++;
+
+            if (isRight)
+            {
+                isRight = false;
+                cannonShotL.SpawnBullet();
+            }
+            else
+            {
+                isRight = true;
+                cannonShotR.SpawnBullet();
+            }
+        }
+        else
+        {
+            if (Input.GetMouseButton(0) && isShootActive && timeSinceShot >= shootSpeed)
+            {
+
+
+
+            }
+        }
     }
 }
