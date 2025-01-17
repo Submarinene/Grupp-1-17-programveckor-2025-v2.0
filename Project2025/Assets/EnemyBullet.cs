@@ -27,7 +27,7 @@ public class EnemyBullet : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Tiles"))
         {
-            Destroy(gameObject, 1f);
+            Destroy(gameObject);
         }
         
     }
