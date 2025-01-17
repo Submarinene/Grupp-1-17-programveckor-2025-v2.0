@@ -32,7 +32,7 @@ public class ButtonScript : MonoBehaviour
         }
         else if (isMainMenuButtonPressed)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(0);
         }
     }
 
