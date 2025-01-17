@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8737049942206583580}
   m_Layer: 0
   m_Name: Isometric Diamond
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 5700812050051517775}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.33, y: -3.93, z: 0}
-  m_LocalScale: {x: -0.29, y: -0.29, z: -0.29}
+  m_LocalPosition: {x: -2.33, y: -3.93, z: -1}
+  m_LocalScale: {x: 1.34, y: 1.34, z: 1.34}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58a1b408101d23f49b7fe314d1ca1410, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 10
 --- !u!50 &-3094009893132443890
 Rigidbody2D:
   serializedVersion: 4
