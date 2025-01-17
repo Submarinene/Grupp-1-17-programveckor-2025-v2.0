@@ -17,7 +17,7 @@ public class WinGameScript : MonoBehaviour
     {
         if (boss.GetComponent<EnemyHealth>().currentHealth <= 0)
         {
-            
+            SceneManager.LoadScene(4);
         }
     }
 }
