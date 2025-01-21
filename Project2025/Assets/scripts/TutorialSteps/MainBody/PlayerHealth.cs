@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class PlayerCollisions : MonoBehaviour
+public class PlayerHealth : MonoBehaviour
 {
     [SerializeField]
     GameObject[] hjärtan;
