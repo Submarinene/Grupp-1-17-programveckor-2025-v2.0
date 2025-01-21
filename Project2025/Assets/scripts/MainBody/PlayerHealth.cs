@@ -33,19 +33,19 @@ public class PlayerCollisions : MonoBehaviour
 
     private void Update()
     {
-        if(isInvisible)
+        if (isInvisible)
         {
             polygonCollider2D.enabled = false;
 
             invisibleTimer += Time.deltaTime;
 
-            for(int i = 0; i < bodyParts.Length; i++)
+            for (int i = 0; i < bodyParts.Length; i++)
             {
                 spriteRenderer = bodyParts[i].GetComponent<SpriteRenderer>();
                 spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 0.5f);
             }
 
-            if(invisibleTimer >= invisibleTime)
+            if (invisibleTimer >= invisibleTime)
             {
                 invisibleTimer = 0;
                 isInvisible = false;
@@ -63,7 +63,7 @@ public class PlayerCollisions : MonoBehaviour
     }
 
 
-   
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -99,7 +99,7 @@ public class PlayerCollisions : MonoBehaviour
 
         }
 
-       
+
     }
     IEnumerator GameOver()
     {

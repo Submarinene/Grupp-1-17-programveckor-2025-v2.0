@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class playerScript : MonoBehaviour
+public class PlayerScript : MonoBehaviour
 {
     int lives;
 
@@ -24,20 +24,24 @@ public class playerScript : MonoBehaviour
 
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D other)
     {
-        Debug.Log("-1 life ");
-        lives--; //lives = lives -1;
-        if (lives < 0)
-            return;
-        hearts[lives].GetComponent<Animator>().SetTrigger("hit"); //sätter igång explosion
-        // hearts[lives].GetComponent<Image>().enabled = false; //tar bort ett hjärta
-        transform.position = new Vector2(-7, 1); //makes the player respawn
-        if (lives == 0)
+        if (other.gameObject.CompareTag("Enemy"))
         {
-            StartCoroutine("GameOver");
-            //change to game over scene
+            Debug.Log("-1 life ");
+            lives--; //lives = lives -1;
+            if (lives < 0)
+                return;
+            hearts[lives].GetComponent<Animator>().SetTrigger("hit"); //sätter igång explosion
+                                                                      // hearts[lives].GetComponent<Image>().enabled = false; //tar bort ett hjärta
+            transform.position = new Vector3(-5, -1.5f, -1); //makes the player respawn
+            if (lives == 0)
+            {
+                StartCoroutine("GameOver");
+                //change to game over scene
+            }
         }
+        
 
     }
 
