@@ -657,7 +657,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainBody: {fileID: 1512189529}
-  thrusterPosition: {x: -0.6, y: -0.4, z: 0}
+  thrusterPosition: {x: -0.25, y: -0.35, z: 0}
   positionSmoothness: 50
   rotationSmoothness: 10
   movementDirection: {x: 0, y: 0, z: 0}
@@ -1499,7 +1499,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -5, y: -1.5, z: -1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1512189541}
@@ -1949,7 +1949,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainBody: {fileID: 1512189529}
   focusPoint: {fileID: 35776044}
-  cannonPosition: {x: -0.65, y: 0.35, z: 0}
+  cannonPosition: {x: -0.4, y: 0.1, z: 0}
   positionSmoothness: 200
 --- !u!212 &1116672059
 SpriteRenderer:
@@ -2536,7 +2536,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainBody: {fileID: 1512189529}
   focusPoint: {fileID: 35776044}
-  cannonPosition: {x: 0.65, y: 0.35, z: 0}
+  cannonPosition: {x: 0.4, y: 0.1, z: 0}
   positionSmoothness: 200
 --- !u!212 &1363121314
 SpriteRenderer:
@@ -2844,7 +2844,7 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: -10}
   trackingTarget: 0
   cameraSize: 0
-  cameraDefaultSize: 10
+  cameraDefaultSize: 5
   isTriggerActive: 0
 --- !u!1001 &1457296433
 PrefabInstance:
@@ -2937,7 +2937,6 @@ GameObject:
   - component: {fileID: 1512189535}
   - component: {fileID: 1512189533}
   - component: {fileID: 1512189532}
-  - component: {fileID: 1512189531}
   - component: {fileID: 1512189530}
   - component: {fileID: 1512189542}
   m_Layer: 0
@@ -2963,18 +2962,6 @@ MonoBehaviour:
   - {fileID: 1370690664}
   - {fileID: 369672174}
   - {fileID: 725130836}
---- !u!114 &1512189531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1512189529}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afe6c16cf32faee44a279861241abd22, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!60 &1512189532
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3395,7 +3382,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.65, y: -0.35, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 993429864}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -71367,7 +71354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainBody: {fileID: 1512189529}
-  thrusterPosition: {x: 0.6, y: -0.4, z: 0}
+  thrusterPosition: {x: 0.25, y: -0.35, z: 0}
   positionSmoothness: 50
   rotationSmoothness: 10
   movementDirection: {x: 0, y: 0, z: 0}
