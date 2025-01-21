@@ -34,7 +34,7 @@ public class TheodorCancerShootingScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("MainBody"))
+        if (other.gameObject.CompareTag("Player"))
         {
             isPlayerInRange = true;
         }
@@ -42,7 +42,7 @@ public class TheodorCancerShootingScript : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("MainBody"))
+        if (other.gameObject.CompareTag("Player"))
         {
             isPlayerInRange = false;
         }
