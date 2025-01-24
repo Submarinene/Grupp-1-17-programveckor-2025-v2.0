@@ -146,6 +146,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: vitblodkropp0002 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 8216215070514104606, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8905353810490038146, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 67.7
@@ -219,6 +223,10 @@ PrefabInstance:
     - target: {fileID: 8216215070514104606, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
       propertyPath: m_Name
       value: vitblodkropp0002
+      objectReference: {fileID: 0}
+    - target: {fileID: 8216215070514104606, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8905353810490038146, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -393,6 +401,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: vitblodkropp0002 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 8216215070514104606, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8905353810490038146, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 81.7
@@ -467,6 +479,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: vitblodkropp0002 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 8216215070514104606, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8905353810490038146, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 69.5
@@ -540,6 +556,10 @@ PrefabInstance:
     - target: {fileID: 8216215070514104606, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
       propertyPath: m_Name
       value: vitblodkropp0002 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8216215070514104606, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8905353810490038146, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -657,7 +677,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainBody: {fileID: 1512189529}
-  thrusterPosition: {x: -0.6, y: -0.4, z: 0}
+  thrusterPosition: {x: -0.25, y: -0.35, z: 0}
   positionSmoothness: 50
   rotationSmoothness: 10
   movementDirection: {x: 0, y: 0, z: 0}
@@ -886,6 +906,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: vitblodkropp0002 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8216215070514104606, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8905353810490038146, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -32.4
@@ -1004,6 +1028,10 @@ PrefabInstance:
     - target: {fileID: 8216215070514104606, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
       propertyPath: m_Name
       value: vitblodkropp0002 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8216215070514104606, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8905353810490038146, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1275,6 +1303,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: vitblodkropp0002 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8216215070514104606, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8905353810490038146, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -42.7
@@ -1349,6 +1381,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: vitblodkropp0002 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 8216215070514104606, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8905353810490038146, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 36.199997
@@ -1422,6 +1458,10 @@ PrefabInstance:
     - target: {fileID: 8216215070514104606, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
       propertyPath: m_Name
       value: vitblodkropp0002 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8216215070514104606, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8905353810490038146, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1499,7 +1539,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -5, y: -1.5, z: -1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1512189541}
@@ -1532,6 +1572,10 @@ PrefabInstance:
     - target: {fileID: 8216215070514104606, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
       propertyPath: m_Name
       value: vitblodkropp0002 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8216215070514104606, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8905353810490038146, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1607,6 +1651,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: vitblodkropp0002 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8216215070514104606, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8905353810490038146, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -61.5
@@ -1681,6 +1729,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: vitblodkropp0002 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 8216215070514104606, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8905353810490038146, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 50.4
@@ -1754,6 +1806,10 @@ PrefabInstance:
     - target: {fileID: 8216215070514104606, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
       propertyPath: m_Name
       value: vitblodkropp0002 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8216215070514104606, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8905353810490038146, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1949,7 +2005,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainBody: {fileID: 1512189529}
   focusPoint: {fileID: 35776044}
-  cannonPosition: {x: -0.65, y: 0.35, z: 0}
+  cannonPosition: {x: -0.4, y: 0.1, z: 0}
   positionSmoothness: 200
 --- !u!212 &1116672059
 SpriteRenderer:
@@ -2041,6 +2097,10 @@ PrefabInstance:
     - target: {fileID: 8216215070514104606, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
       propertyPath: m_Name
       value: vitblodkropp0002 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8216215070514104606, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8905353810490038146, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2183,6 +2243,10 @@ PrefabInstance:
     - target: {fileID: 8216215070514104606, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
       propertyPath: m_Name
       value: vitblodkropp0002 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8216215070514104606, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8905353810490038146, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2536,7 +2600,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainBody: {fileID: 1512189529}
   focusPoint: {fileID: 35776044}
-  cannonPosition: {x: 0.65, y: 0.35, z: 0}
+  cannonPosition: {x: 0.4, y: 0.1, z: 0}
   positionSmoothness: 200
 --- !u!212 &1363121314
 SpriteRenderer:
@@ -2844,7 +2908,7 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: -10}
   trackingTarget: 0
   cameraSize: 0
-  cameraDefaultSize: 10
+  cameraDefaultSize: 5
   isTriggerActive: 0
 --- !u!1001 &1457296433
 PrefabInstance:
@@ -2869,6 +2933,10 @@ PrefabInstance:
     - target: {fileID: 8216215070514104606, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
       propertyPath: m_Name
       value: vitblodkropp0002 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8216215070514104606, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8905353810490038146, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2937,7 +3005,6 @@ GameObject:
   - component: {fileID: 1512189535}
   - component: {fileID: 1512189533}
   - component: {fileID: 1512189532}
-  - component: {fileID: 1512189531}
   - component: {fileID: 1512189530}
   - component: {fileID: 1512189542}
   m_Layer: 0
@@ -2963,6 +3030,7 @@ MonoBehaviour:
   - {fileID: 1370690664}
   - {fileID: 369672174}
   - {fileID: 725130836}
+<<<<<<< HEAD
 --- !u!114 &1512189531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2979,6 +3047,8 @@ MonoBehaviour:
   invisibleTime: 3
   invisibleTimer: 0
   bodyParts: []
+=======
+>>>>>>> main
 --- !u!60 &1512189532
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3399,7 +3469,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.65, y: -0.35, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 993429864}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3418,7 +3488,7 @@ MonoBehaviour:
   cannonL: {fileID: 1116672055}
   cannonR: {fileID: 1363121309}
   isShootActive: 0
-  shootSpeed: 1
+  shootSpeed: 0.3
   timeSinceShot: 0
   shotsFired: 0
 --- !u!1 &1566733002
@@ -3443,7 +3513,7 @@ GameObject:
   - component: {fileID: 1566733008}
   - component: {fileID: 1566733007}
   - component: {fileID: 1566733006}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tilemap
   m_TagString: Tiles
   m_Icon: {fileID: 0}
@@ -71371,7 +71441,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainBody: {fileID: 1512189529}
-  thrusterPosition: {x: 0.6, y: -0.4, z: 0}
+  thrusterPosition: {x: 0.25, y: -0.35, z: 0}
   positionSmoothness: 50
   rotationSmoothness: 10
   movementDirection: {x: 0, y: 0, z: 0}
@@ -71450,6 +71520,10 @@ PrefabInstance:
     - target: {fileID: 8216215070514104606, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
       propertyPath: m_Name
       value: vitblodkropp0002 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8216215070514104606, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8905353810490038146, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -71630,6 +71704,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: vitblodkropp0002 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 8216215070514104606, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8905353810490038146, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -44.9
@@ -71704,6 +71782,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: vitblodkropp0002 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 8216215070514104606, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8905353810490038146, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 107.2
@@ -71777,6 +71859,10 @@ PrefabInstance:
     - target: {fileID: 8216215070514104606, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
       propertyPath: m_Name
       value: vitblodkropp0002 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8216215070514104606, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8905353810490038146, guid: eb70e87d69796f24da86603cfec6b5e2, type: 3}
       propertyPath: m_LocalPosition.x
