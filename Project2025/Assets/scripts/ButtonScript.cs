@@ -9,6 +9,7 @@ public class ButtonScript : MonoBehaviour
     bool isTutorialButtonPressed = false;
     bool isExitButtonPressed = false;
     bool isMainMenuButtonPressed = false;
+    bool isNextLevelButtonPressed = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +35,10 @@ public class ButtonScript : MonoBehaviour
         {
             SceneManager.LoadScene(0);
         }
+        else if (isExitButtonPressed)
+        {
+            SceneManager.LoadScene(5);
+        }
     }
 
     public void OnStartButtonClick()
@@ -54,5 +59,9 @@ public class ButtonScript : MonoBehaviour
     public void OnMainMenuButtonClick()
     {
         isMainMenuButtonPressed = true;
+    }
+    public void OnNextLevelButtonClick()
+    {
+        isNextLevelButtonPressed = true;
     }
 }
