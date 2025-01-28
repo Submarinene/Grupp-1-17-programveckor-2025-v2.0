@@ -3007,6 +3007,7 @@ GameObject:
   - component: {fileID: 1512189532}
   - component: {fileID: 1512189530}
   - component: {fileID: 1512189542}
+  - component: {fileID: 1512189531}
   m_Layer: 0
   m_Name: MainBody
   m_TagString: Player
@@ -71362,6 +71363,10 @@ PrefabInstance:
     - target: {fileID: 55322229739813214, guid: f07a6527daa82254fad2f05caa63f601, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5021978866246456151, guid: f07a6527daa82254fad2f05caa63f601, type: 3}
+      propertyPath: maxHealth
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8893868054795436849, guid: f07a6527daa82254fad2f05caa63f601, type: 3}
       propertyPath: m_Name
