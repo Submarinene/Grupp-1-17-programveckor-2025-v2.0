@@ -18,6 +18,9 @@ public class BulletScript : MonoBehaviour
 
     Camera mainCamera;
 
+
+    public List<string> allowedNames = new List<string>();
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,7 +49,9 @@ public class BulletScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+
         Destroy(gameObject);
+        Debug.Log($"{gameObject.name} has hit {collision.gameObject.name}.");
 
         if (collision.gameObject.layer == 8)
         {
