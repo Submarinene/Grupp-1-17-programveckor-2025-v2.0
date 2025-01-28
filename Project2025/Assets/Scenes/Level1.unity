@@ -3030,7 +3030,6 @@ MonoBehaviour:
   - {fileID: 1370690664}
   - {fileID: 369672174}
   - {fileID: 725130836}
-<<<<<<< HEAD
 --- !u!114 &1512189531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3047,8 +3046,6 @@ MonoBehaviour:
   invisibleTime: 3
   invisibleTimer: 0
   bodyParts: []
-=======
->>>>>>> main
 --- !u!60 &1512189532
 PolygonCollider2D:
   m_ObjectHideFlags: 0
