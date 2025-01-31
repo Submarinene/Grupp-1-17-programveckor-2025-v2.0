@@ -10,7 +10,7 @@ public class NextLevelButton : MonoBehaviour
     {
         if (isNextLevelButtonPressed == true)
         {
-            SceneManager.LoadScene(6);
+            SceneManager.LoadScene(5);
         }
     }
 

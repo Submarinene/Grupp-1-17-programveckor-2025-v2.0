@@ -35,7 +35,7 @@ public class ButtonScript : MonoBehaviour
         {
             SceneManager.LoadScene(0);
         }
-        else if (isExitButtonPressed)
+        else if (isNextLevelButtonPressed)
         {
             SceneManager.LoadScene(5);
         }
