@@ -12,7 +12,7 @@ public class CameraMovement : MonoBehaviour
     public int trackingTarget = 0;
 
     public float cameraSize; // Desired camera size
-    public float cameraDefaultSize = 10; // Default camera size
+    public float cameraDefaultSize = 6; // Default camera size
 
     private Camera cameraComponent;
 
