@@ -10,6 +10,9 @@ public class TheodorBossShooting : MonoBehaviour
     public Transform bulletPos;
     bool isPlayerInRange = false;
     float timer;
+    public Vector3 direction;
+
+    public float bulletForce;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,11 +29,8 @@ public class TheodorBossShooting : MonoBehaviour
             {
                 Shoot();
                 timer = 0;
-
             }
         }
-
-
     }
 
     public void EnterTrigger(GameObject other)
@@ -48,16 +48,23 @@ public class TheodorBossShooting : MonoBehaviour
             isPlayerInRange = false;
         }
     }
+
     void Shoot()
     {
         // Calculate the direction from the bullet's spawn position to the player's position
-        Vector3 direction = player.transform.position - bulletPos.position;
+        direction = player.transform.position - bulletPos.position;
 
-        // Calculate the rotation needed to face the player
-        Quaternion rotation = Quaternion.LookRotation(direction);
-        rotation = Quaternion.Euler(0, 0, rotation.z);
+        // Calculate the angle in radians
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+
+        // Create a rotation vector3 with x and y as 0, and z as the calculated angle
+        Vector3 rotation = new Vector3(0, 0, angle + 90);
 
         // Instantiate the bullet with the calculated rotation
-        Instantiate(bullet, bulletPos.position, rotation);
+        GameObject clone = Instantiate(bullet, bulletPos.position + direction.normalized, Quaternion.Euler(rotation));
+        clone.SetActive(true);
+        clone.AddComponent<bulletDestroyOnTime>();
+        Rigidbody2D cloneRB = clone.GetComponent<Rigidbody2D>();
+        cloneRB.AddForce(direction.normalized * bulletForce, ForceMode2D.Impulse);
     }
 }

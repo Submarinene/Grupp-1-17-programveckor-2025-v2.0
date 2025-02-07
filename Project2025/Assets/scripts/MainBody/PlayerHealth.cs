@@ -65,7 +65,7 @@ public class PlayerCollisions : MonoBehaviour
 
 
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
         Vector2 relativeVelocity = collision.relativeVelocity;
 
@@ -97,6 +97,24 @@ public class PlayerCollisions : MonoBehaviour
                 //change to game over scene
             }
 
+        }
+        if(collision.gameObject.layer == 11)
+        {
+            Debug.Log("You got hit");
+            health--; //lives = lives -1;
+                      //hjärtan[].GetComponent<Image>().enabled = false;
+
+            hjärtan[health].GetComponent<Animator>().SetTrigger("hit"); //sätter igång explosion
+            polygonCollider2D.enabled = false;
+            isInvisible = true;
+
+            if (health <= 0)
+            {
+                StartCoroutine("GameOver");
+                //change to game over scene
+            }
+
+            Destroy(collision.gameObject);
         }
 
 
