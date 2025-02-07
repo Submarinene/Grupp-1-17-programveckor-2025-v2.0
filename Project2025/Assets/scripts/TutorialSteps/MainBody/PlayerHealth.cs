@@ -75,12 +75,12 @@ public class PlayerHealth : MonoBehaviour
         // Log or process the force
         Debug.Log("Collision Force: " + collisionForce);
 
-        if (collisionForce > 8)
+       /* if (collisionForce > 8)
         {
             audioSources[1].volume = collisionForce / 33;
             audioSources[1].Play();
         }
-
+       */
         if (collision.gameObject.layer == 6)
         {
             Debug.Log("You got hit");
